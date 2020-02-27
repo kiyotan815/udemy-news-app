@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  StyleSheet, Text, View, Image,
+  StyleSheet, Text, View, Image, TouchableOpacity,
 } from 'react-native';
 import PropTypes from 'prop-types';
 
@@ -30,8 +30,13 @@ const styles = StyleSheet.create({
   },
 });
 
-const ListItem = ({ author, imageUrl, title }) => (
-  <View style={styles.itemContainer}>
+const ListItem = ({
+  author, imageUrl, title, onPress,
+}) => (
+  <TouchableOpacity
+    onPress={onPress}
+    style={styles.itemContainer}
+  >
     <View style={styles.leftContainer}>
       {!!imageUrl && (
         <Image
@@ -46,13 +51,14 @@ const ListItem = ({ author, imageUrl, title }) => (
       </Text>
       <Text style={styles.subText}>{author}</Text>
     </View>
-  </View>
+  </TouchableOpacity>
 );
 
 ListItem.propTypes = {
   author: PropTypes.string,
   imageUrl: PropTypes.string,
   title: PropTypes.string,
+  onPress: PropTypes.func.isRequired,
 };
 
 ListItem.defaultProps = {

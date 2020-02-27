@@ -1,0 +1,61 @@
+Arguments: 
+  /home/k1y0/.nodebrew/node/v10.19.0/bin/node /usr/share/yarn/bin/yarn.js add react-native-navigation
+
+PATH: 
+  /home/k1y0/.pyenv/shims:/home/k1y0/.pyenv/bin:/home/k1y0/.nodebrew/current/bin:/home/k1y0/.rbenv/shims:/home/k1y0/.rbenv/bin:/usr/local/opt/mysql@5.7/bin:/usr/local/opt/openssl/bin:/home/k1y0/.pyenv/shims:/home/k1y0/.pyenv/bin:/home/k1y0/.nodebrew/current/bin:/home/k1y0/.rbenv/shims:/home/k1y0/.rbenv/bin:/usr/local/opt/mysql@5.7/bin:/usr/local/opt/openssl/bin:/home/k1y0/.pyenv/shims:/home/k1y0/.pyenv/bin:/home/k1y0/.nodebrew/current/bin:/home/k1y0/.rbenv/shims:/home/k1y0/.rbenv/bin:/usr/local/opt/mysql@5.7/bin:/usr/local/opt/openssl/bin:/home/k1y0/.pyenv/shims:/home/k1y0/.pyenv/bin:/home/k1y0/.nodebrew/current/bin:/home/k1y0/.rbenv/shims:/home/k1y0/.rbenv/bin:/usr/local/opt/mysql@5.7/bin:/usr/local/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/k1y0/.local/bin:/home/k1y0/.local/bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  10.19.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/k1y0/workspace/hackhackhack/udemy/news-app/package.json: Unexpected token } in JSON at position 522
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "axios": "^0.19.2",
+      "expo": "~36.0.0",
+      "expo-constants": "~8.0.0",
+      "prop-types": "^15.7.2",
+      "react": "~16.9.0",
+      "react-dom": "~16.9.0",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+      "react-native-web": "~0.11.7",
+    },
+    "devDependencies": {
+      "@babel/core": "^7.0.0",
+      "babel-preset-expo": "~8.0.0",
+      "eslint": "^6.8.0",
+      "eslint-config-airbnb": "^18.0.1",
+      "eslint-plugin-import": "^2.20.1",
+      "eslint-plugin-jsx-a11y": "^6.2.3",
+      "eslint-plugin-react": "^7.18.3",
+      "eslint-plugin-react-hooks": "^1.7.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
